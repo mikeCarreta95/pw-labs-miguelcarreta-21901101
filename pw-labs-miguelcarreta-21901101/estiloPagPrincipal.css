@@ -1,0 +1,39 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+@font-face{
+    font-family: 'FontLogo';
+    src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+
+
+
+h1{
+    
+    color: #363636;
+    font-family: 'FontLogo', sans-serif;
+}
+
+nav#paginaprincipal {
+    display: block;
+}
+
+a#menu {
+    text-decoration: none;
+
+}
+
+nav#paginaprincipal ul {
+    list-style: none;
+}
+
+nav#paginaprincipal li {
+    font-size: 14pt;
+    padding: 7px;
+    margin: 7px;
+}
+
+nav#paginaprincipal li:hover{
+    text-transform:uppercase;
+    text-decoration: underline;
+}
+
