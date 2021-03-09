@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <title>New York City !</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Miguel Carreta">
+        <meta name="keywords" content="palavras chave">
+        <meta name="description" content="Website sobre s.f">
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="_css/estilo.css">
+        <style>
+            
+            fieldset{
+                padding-left: 40px;
+                margin: 1rem 0;
+                box-shadow: 2px 2px 3px #606060;
+                position: relative;
+                border-radius: 10px;
+            }
+
+            fieldset#identificacao::before{
+                position: absolute;
+                content: '';
+                width: 0;
+                height: 0;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                border-width: 20px;
+                border-color: rgb(2, 89, 95);
+                border-style: solid;
+                border-bottom-color: transparent;
+                border-top-color: transparent ;
+                border-right-color: transparent;
+                
+
+
+            }
+
+            fieldset#quizz{
+                text-align: center;
+                
+            }
+            fieldset#identificacao legend {
+                color: rgb(19, 62, 65);
+            }
+
+
+            fieldset#quizz legend {
+                margin-left: -23rem;
+                color: rgb(19, 62, 65);
+            }
+
+
+            h6#msg{
+                text-align: center;
+                font-size: 9pt;
+            }
+
+            button[type = "submit"]{
+                
+                text-align: center;
+                width: 100%;
+                border: none;
+                outline: none;
+                padding: 20px;
+                font-size: 22pt;
+                border-radius: 10px;
+                box-shadow: 2px 2px 3px #606060;
+                font-family: 'FontLogo', sans-serif;
+                color: #15657e;
+                cursor: pointer;
+                
+                
+            }
+            button[type="submit"]:hover{
+                background-color: #15657e42;
+                text-transform: uppercase;
+                text-decoration: underline;
+                text-shadow: 1px 1px 1px #15657e42;
+                text-decoration-color: white;
+                transition: 1s;
+            }
+
+            button[type = "reset"]{
+                
+                text-align: center;
+                width: 100%;
+                border: none;
+                outline: none;
+                padding: 20px;
+                font-size: 22pt;
+                border-radius: 10px;
+                box-shadow: 2px 2px 3px #606060;
+                font-family: 'FontLogo', sans-serif;
+                color: #15657e;
+                cursor: pointer;
+               
+            }
+            button[type="reset"]:hover{
+                background-color: #b8000052;
+                text-transform: uppercase;
+                text-decoration: underline;
+                text-shadow:1px 1px 1px #b8000052;
+                text-decoration-color: white;
+                transition: 1s;
+            } 
+                        
+         </style>
+         </head>
+    <body>
+        
+        <div id="interface">
+          
+         <header id="cabecalho">  
+        
+            <h1>New York 🗽</h1>
+
+        <nav id="menu">
+            <figure class="foto-principal">
+            <img src="images/newYpzd300.jpg" alt="foto-home">
+         </figure>
+        <br>
+        <ul>
+            <li><a href="index.html">Introdução</a></li>
+            <li><a href="local.html">Localização</a></li>
+            <li><a href="multimedia.html">Multimédia</a></li>
+            <li><a href="info.html">Informações</a></li> 
+            <li><a href="quizz.html"><b>Quizz</b></a></li>
+            <li><a href="comentarios.html">Comentários</a></li>
+            <li><a href="../index.html">Home</a></li>
+        </ul>
+        </nav>
+    </header> 
+        <hr>
+    <h3>Quizz</h3>
+    <h6 id="msg"><i>(Submeta no final)</i></h6>
+    <form action="belgica95@outlook.com" method="POST" autocomplete="on">
+        
+        <fieldset id="identificacao">
+            <legend>Identificação</legend>
+            <p>Nome: <input type="text" name="nome" required placeholder="Escreva aqui" autofocus maxlength="30" size="30"></p>
+            <p>Idade: <input type="text" name="idade" required placeholder="Escreva aqui" maxlength="3" size="30"></p>
+            <p>Email: <input type="email" name="email" required placeholder="Escreva aqui" maxlength="30" size="30"></p> 
+            <p>Telemovél: <input type="tel" name="tel" placeholder="91-6666-666" pattern="[0-9]{2}-[0-9]{4}-[0-9]{3}" size="26"></p>
+        </fieldset>
+    
+    </form>
+        <br>
+        <form action="belgica95@outlook.com" method="POST">
+            
+        <fieldset id="quizz">
+            <legend>NY Quizz</legend>
+            <br><br>
+            <label for="q1"></label><b>Qual a cidade mais populosa dos Estados Unidos ?</b></label>
+            <br><br>
+            <input type="text" id="f1" name="f1"  placeholder="Escreva aqui" size="17">
+            <br><br>
+            <hr>
+            <label for="area"><b>Qual a área total da cidade ?</b></label><br><br>
+            <input type="radio" name="area" value="certo">
+            <label for="q2">1 212,60 km2</label><br>
+            <input type="radio" name="area" value="errado">
+            <label for="q2">1 321,06 km2</label><br>
+            <input type="radio" name="area" value="errado">
+            <label for for="q2">1 012,50 km2</label>
+            <br><br>
+            <hr>
+            <label for="pop"><b>Qual o número aproximado de habitantes ?</b></label><br><br>
+            <input type="checkbox" name="pop" value="errado">
+            <label for="q3"> 7 378 129 hab</label><br>
+            <input type="checkbox" name="pop" value="certo">
+            <label for="q3"> 8 336 817 hab</label><br>
+            <input type="checkbox" name="pop" value="errado">
+            <label for="q3"> 9 721 083 hab</label>
+            <br><br>
+            <hr>
+            <label for="biden"><b>Em que dia Joe Biden foi eleito Presidente ?</b></label><br><br>
+            <input type="date"  name="biden" value="biden">
+            <br><br>
+            <hr>
+            <label for="colorny"><b>No seu ponto de vista que cor caracteriza Nova Iorque ?</b></label><br><br>
+            <input type="color" id="colorny" name="colorny" value="#0B7CA2">
+            <br><br>
+            <hr>
+            <label for="year"><b>Em que ano houve o atentado terrorista às Torres Gêmeas ?</b></label><br><br>
+            <input type="number" name="year" placeholder="Escreva aqui">
+            <br><br>
+            <hr>
+            <label for="quizzScore"><b>De 0 a 10 quanto gostaria de ir aos Estados Unidos ?</b></label><br><br>
+            <input type="range" id="quizzScore" name="quizzScore" min="0" max="10" oninput="this.nextElementSibling.value = this.value">
+            <output>0</output>
+            <hr>
+            <br>
+            <button type="submit">Submit! ☑️</button>
+            <br><br>
+            <button type="reset">  Reset! ❌</button>
+        </fieldset>
+        
+        </form>
+        <svg width="800" height="300">
+            <g transform="translate(300,100)"> 
+                <a href="index.html">
+                    <text id="TextElement" x="0" y="0" style="font-family:FontLogo;font-size:24; visibility:hidden"> Introducao
+                        <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="5s" fill="freeze" />
+                        <animateMotion path="M 4 0 L 100 89" begin="1s" dur="5s" fill="freeze" />
+                        <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-30" to="0" begin="1s" dur="5s" fill="freeze" /> 
+                        <animateTransform attributeName="transform" attributeType="XML" type="scale" from="1" to="3" additive="sum" begin="2s" dur="5s" fill="freeze" /> 
+                      </text> 
+                </a>
+              
+                <a href="local.html">
+               <text id="TextElement" x="300" y="2" style="font-family:FontLogo;font-size:20; visibility:hidden"> Localizacao
+                <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="5s" fill="freeze" />
+                <animateMotion path="M 0 0 L 50 100" begin="1s" dur="5s" fill="freeze" />
+                <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-30" to="0" begin="1s" dur="5s" fill="freeze" /> 
+              </text> 
+              </a>
+              
+              <a href="multimedia.html">
+                   <text id="TextElement2" x="100" y="2" style="font-family:Impact;font-size:14; visibility:hidden"> Multimedia
+                <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="5s" fill="freeze" />
+                <animateMotion path="M 0 0 L 50 100" begin="1s" dur="5s" fill="freeze" />
+                <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-30" to="0" begin="1s" dur="5s" fill="freeze" /> 
+                </text> 
+            </a>
+                
+            <a href="info.html">
+                 <text id="TextElement3" x="200" y="2" style="font-family:Verdana;font-size:14; visibility:hidden"> Informacao
+                <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="5s" fill="freeze" />
+                <animateMotion path="M 0 0 L 50 100" begin="1s" dur="5s" fill="freeze" />
+                <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-30" to="0" begin="3s" dur="5s" fill="freeze" /> 
+                </text> 
+            </a>
+                
+            <a href="comentarios.html">
+                   <text id="TextElement3" x="200" y="-70" style="font-family:Courier New-B;font-size:14; visibility:hidden"> Comentarios
+                <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="5s" fill="freeze" />
+                <animateMotion path="M 10 0 L 50 100" begin="1s" dur="5s" fill="freeze" />
+                <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-30" to="0" begin="1s" dur="2s" fill="freeze" /> 
+                </text> 
+            </a>
+  
+            <a href="quizz.html">
+                   <text id="TextElement3" x="150" y="-70" style="font-family:Courier New;font-size:14; visibility:hidden"> QUIZZ
+                <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="5s" fill="freeze" />
+                <animateMotion path="M 10 0 L 50 100" begin="1s" dur="4s" fill="freeze" />
+                <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-30" to="0" begin="1s" dur="5s" fill="freeze" /> 
+                </text> 
+            </a>
+                
+            </g> 
+          </svg>
+        </div>
+    </body>
+</html>
+
