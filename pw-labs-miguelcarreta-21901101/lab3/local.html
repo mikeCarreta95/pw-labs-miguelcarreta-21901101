@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <title>New York City !</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Miguel Carreta">
+        <meta name="keywords" content="palavras chave">
+        <meta name="description" content="Website sobre s.f">
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="_css/estilo.css">
+    </head>
+    <body>
+        <div id="interface">
+          
+         <header id="cabecalho">  
+        
+            <h1>New York 🗽</h1>
+
+        <nav id="menu">
+            <figure class="foto-principal">
+            <img src="images/newYpzd300.jpg" alt="foto-home">
+         </figure>
+        <br>
+        <ul>
+            <li><a href="index.html">Introdução</a></li>
+            <li><a href="local.html"><b>Localização</b></a></li>
+            <li><a href="multimedia.html">Multimédia</a></li>
+            <li><a href="info.html">Informações</a></li> 
+            <li><a href="quizz.html">Quizz</a></li>
+            <li><a href="comentarios.html">Comentários</a></li>
+            <li><a href="../index.html">Home</a></li>
+        </ul>
+        </nav>
+        </header> 
+        <hr>
+        <h3>Localização</h3>
+        <p>A cidade de Nova Iorque está localizada no extremo sul do estado de Nova Iorque, no nordeste dos Estados Unidos, aproximadamente a meio caminho entre Washington, D.C. e Boston.A área de terra da cidade é estimada em 790 km² e de água em 425 km². Sua área total é de 1 214 km². O ponto mais alto da cidade é Todt Hill em Staten Island, que fica a 124,9 m acima do nível </p>
+        <center><iframe  style="border-radius: 5px " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d143214.92257292368!2d-74.21228413405436!3d40.68129726868805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNova%20Iorque%2C%20NY%2C%20EUA!5e1!3m2!1spt-PT!2spt!4v1614563884457!5m2!1spt-PT!2spt" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" ></iframe></center>
+
+        <br>
+        <hr>
+        <br>
+
+      <svg id="subway" style="position: relative; left:120px; box-shadow: 2px 2px 10px #606060; border-radius: 5px" width="655" height="707">
+          <image href="images/subway655.svg.png" alt="mapsvg"></image>
+
+        <!--Central Park SVG-->
+          <a href="images/centralpark800.jpg" target="fotos">
+            <circle cx="100" cy="235" r="10" stroke="black" stroke-width="1" fill="red">
+          </a>
+          <!--Statue-->
+          <a href="images/statue800.jpg" target="fotos">
+            <circle  cx="117"  cy="527" r="8" stroke = "green" stroke-width="1" fill="black"/> 
+          </a>
+
+          <!--Empire State Building-->
+          <a href="images/empire.jpg" target="fotos">
+          <circle cx="130" cy="355" r="10" stroke="black" stroke-width="1" fill="blue"></circle>
+          </a>
+      </svg>
+      <br>
+      <iframe id="svgfotos" src="images/centralpark800.jpg" name="fotos" width="800" height="500" title="Fotos SVG"></iframe>
+
+        <svg width="800" height="300">
+            <g transform="translate(300,100)"> 
+                <a href="index.html">
+                    <text id="TextElement" x="0" y="0" style="font-family:FontLogo;font-size:24; visibility:hidden"> Introducao
+                        <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="5s" fill="freeze" />
+                        <animateMotion path="M 4 0 L 100 89" begin="1s" dur="5s" fill="freeze" />
+                        <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-30" to="0" begin="1s" dur="5s" fill="freeze" /> 
+                        <animateTransform attributeName="transform" attributeType="XML" type="scale" from="1" to="3" additive="sum" begin="2s" dur="5s" fill="freeze" /> 
+                      </text> 
+                </a>
+              
+                <a href="local.html">
+               <text id="TextElement" x="300" y="2" style="font-family:FontLogo;font-size:20; visibility:hidden"> Localizacao
+                <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="5s" fill="freeze" />
+                <animateMotion path="M 0 0 L 50 100" begin="1s" dur="5s" fill="freeze" />
+                <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-30" to="0" begin="1s" dur="5s" fill="freeze" /> 
+              </text> 
+              </a>
+              
+              <a href="multimedia.html">
+                   <text id="TextElement2" x="100" y="2" style="font-family:Impact;font-size:14; visibility:hidden"> Multimedia
+                <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="5s" fill="freeze" />
+                <animateMotion path="M 0 0 L 50 100" begin="1s" dur="5s" fill="freeze" />
+                <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-30" to="0" begin="1s" dur="5s" fill="freeze" /> 
+                </text> 
+            </a>
+                
+            <a href="info.html">
+                 <text id="TextElement3" x="200" y="2" style="font-family:Verdana;font-size:14; visibility:hidden"> Informacao
+                <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="5s" fill="freeze" />
+                <animateMotion path="M 0 0 L 50 100" begin="1s" dur="5s" fill="freeze" />
+                <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-30" to="0" begin="3s" dur="5s" fill="freeze" /> 
+                </text> 
+            </a>
+                
+            <a href="comentarios.html">
+                   <text id="TextElement3" x="200" y="-70" style="font-family:Courier New-B;font-size:14; visibility:hidden"> Comentarios
+                <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="5s" fill="freeze" />
+                <animateMotion path="M 10 0 L 50 100" begin="1s" dur="5s" fill="freeze" />
+                <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-30" to="0" begin="1s" dur="2s" fill="freeze" /> 
+                </text> 
+            </a>
+  
+            <a href="quizz.html">
+                   <text id="TextElement3" x="150" y="-70" style="font-family:Courier New;font-size:14; visibility:hidden"> QUIZZ
+                <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="5s" fill="freeze" />
+                <animateMotion path="M 10 0 L 50 100" begin="1s" dur="4s" fill="freeze" />
+                <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-30" to="0" begin="1s" dur="5s" fill="freeze" /> 
+                </text> 
+            </a>
+                
+            </g> 
+          </svg>
+    </body>
+    <footer>
+      
+    </footer>
+</html>
