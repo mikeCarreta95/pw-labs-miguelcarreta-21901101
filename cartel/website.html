@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Miguel Carreta">
+    <meta name="keywords" content="Cartel Di Roma">
+    <meta name="description" content="Website sobre a Pastelaria Cartel di Roma">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo2.png" type="image/x-icon">
+    <link rel="stylesheet" href="_css/css.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet">
+    <title>Cartel di Roma</title>
+    <style>
+         
+                        
+         </style>
+    </style>
+</head>
+        <body>
+            <nav id="menu">
+               <ul>
+                   <img class="foto-menu" src="images/logoTransparent100v2.png" alt="">
+                    <li>
+                        <span class="nameMenu">Home</span>
+                        <a href="index.html">
+                            <i class="material-icons">home</i>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="nameMenu">Sobre</span>
+                        <a href="about.html">
+                            <i class="material-icons">person</i>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="nameMenu">Produtos</span>
+                        <a href="stuff.html">
+                            <i class="material-icons">bakery_dining</i>
+                        </a>
+                    </li>
+                       <!--<ul>
+                            <li><a href="cookies.html">Cookies</a></li>
+                            <li><a href="cupcakes.html">Cupcakes</a></li>
+                            <li><a href="tartelettes.html">Tartelettes</a></li>
+                        </ul> -->
+                    <li>
+                        <span class="nameMenu">Contactos</span>
+                        <a href="contactos.html">
+                            <i class="material-icons">contact_phone</i>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="nameMenu">Website</span>
+                        <a href="website.html">
+                            <i class="material-icons">web</i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <main>
+                <br>
+                <h1>Formulário</h1>
+                <h6 id="msg"><i>(Submeta no final)</i></h6>
+                <form action="belgica95@outlook.com" method="POST" autocomplete="on">
+        
+                <fieldset id="identificacao">
+                    <legend>Identificação</legend>
+                    <p>Nome: <input type="text" name="nome" required placeholder="Escreva aqui" autofocus maxlength="30" size="30"></p>
+                    <p>Idade: <input type="text" name="idade" required placeholder="Escreva aqui" maxlength="3" size="30"></p>
+                    <p>Email: <input type="email" name="email" required placeholder="Escreva aqui" maxlength="30" size="30"></p> 
+                    <p>Telemovél: <input type="tel" name="tel" placeholder="916-666-666" pattern="[0-9]{2}-[0-9]{4}-[0-9]{3}" size="26"></p>
+                </fieldset>
+    
+                 </form>
+                <br>
+                <form action="belgica95@outlook.com" method="POST" autocomplete="on">
+                    
+                <fieldset id="quizz">
+                    <legend>Formulário</legend>
+                    <br><br>
+                    <label for="q1"></label><b>Qual o doce que mais chamou à atenção?</b></label>
+                    <br><br>
+                    <input type="text" id="f1" name="f1"  placeholder="Escreva aqui" size="17">
+                    <br><br>
+                    <hr>
+                    <label for="area"><b>Que strain de Edibles lhe provocou mais interesse?</b></label><br><br>
+                    <input type="radio" name="area" value="certo">
+                    <label for="q2">OG Kush</label><br>
+                    <input type="radio" name="area" value="errado">
+                    <label for="q2">Amnesia Haze</label><br>
+                    <input type="radio" name="area" value="errado">
+                    <label for for="q2">Pineapple  Express</label>
+                    <br><br>
+                    <hr>
+                    <label for="pop"><b>Concorda com esta iniciativa?</b></label><br><br>
+                    <input type="checkbox" name="pop" value="errado">
+                    <label for="q3">Sim</label><br>
+                    <input type="checkbox" name="pop" value="certo">
+                    <label for="q3">Não</label><br>
+                    <input type="checkbox" name="pop" value="errado">
+                    <label for="q3"><a class="formul" href="https://weedmaps.com/learn/products-and-how-to-consume/edibles" target="_blank">O que são Edibles ?</a></label>
+                    <br><br>
+                    <hr>
+                    <label for="quizzScore"><b>De 0 a 10 quanto gostaria de provar os nossos produtos?</b></label><br><br>
+                    <input type="range" id="quizzScore" name="quizzScore" min="0" max="10" oninput="this.nextElementSibling.value = this.value">
+                    <output>0</output>
+                    <br><br>
+                    <hr>
+                    <label for="q1"></label><b>O que mudaria neste website?</b></label>
+                    <br><br>
+                    <input type="text" id="f1" name="f1"  placeholder="Escreva aqui" size="17">
+                    <br><br>
+                    <hr>
+                    <label for="q1"></label><b>Outras sugetões?</b></label>
+                    <br><br>
+                    <input type="text" id="f1" name="f1"  placeholder="Escreva aqui" size="17">
+                    <br><br>
+                    <button type="submit">Submit! ☑️</button>
+                    <br><br>
+                    <button type="reset">  Reset! ❌</button>
+                </fieldset>
+                </form>
+                <br><br><br>
+                <hr>
+                <br><br><br>
+
+                <h1>HTML5 e CSS</h1>
+            <br><br><hr>
+            <br>
+            
+            <table>
+                <caption>Elementos HTML5</caption>
+                <thead>
+                    <tr>
+                        <th>Elementos HTML5</th>
+                        <th>Usado</th>
+                        <th>Onde</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>&lt;Hx&gt;</td>
+                        <td><img src="https://img.icons8.com/dusk/30/000000/checkmark--v1.png"/></td>
+                        <td>Nos titulos | Todas as páginas</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;P&gt;</td>
+                        <td><img src="https://img.icons8.com/dusk/30/000000/checkmark--v1.png"/></td>
+                        <td>Em parágrafos | Todas as páginas</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;A&gt;</td>
+                        <td><img src="https://img.icons8.com/dusk/30/000000/checkmark--v1.png"/></td>
+                        <td>Marcador de hiperlink | Todas as páginas</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>&lt;OL&gt;</td>
+                        <td><img src="https://img.icons8.com/emoji/30/000000/cross-mark-emoji.png"/></td>
+                        <td>Listas ordenadas</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;UL&gt;</td>
+                        <td><img src="https://img.icons8.com/dusk/30/000000/checkmark--v1.png"/></td>
+                        <td>Listas não-ordenadas | Todas as páginas (menu)</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;IMG&gt;</td>
+                        <td><img src="https://img.icons8.com/dusk/30/000000/checkmark--v1.png"/></td>
+                        <td>Inserir imagens | Todas excepto a página Contactos</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;NAV&gt;</td>
+                        <td><img src="https://img.icons8.com/dusk/30/000000/checkmark--v1.png"/></td>
+                        <td>Indica o menu |     Todas as páginas</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;FOOTER&gt;</td>
+                        <td><img src="https://img.icons8.com/dusk/30/000000/checkmark--v1.png"/></td>
+                        <td>Rodapé | Todas as páginas</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;TABLE&gt;</td>
+                        <td><img src="https://img.icons8.com/dusk/30/000000/checkmark--v1.png"/></td>
+                        <td>Define uma tabela | Na página das Definicões e na atual (HTML5 e CSS)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <br><br> <hr> 
+            <br>
+            
+            <table>
+                <caption>Seletores CSS</caption>
+                <thead>
+                    <tr>
+                        <th>Selectores CSS</th>
+                        <th>Usado</th>
+                        <th>Onde</th>
+                    </tr>
+                </thead>
+                
+                    <tr>
+                        <td>&lt;UNIVERSAL&gt;</td>
+                        <td><img src="https://img.icons8.com/dusk/30/000000/checkmark--v1.png"/></td>
+                        <td>O seletor universal (*) aplica o estilo a todos os elementos da
+                            página</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;TIPO&gt;</td>
+                        <td><img src="https://img.icons8.com/dusk/30/000000/checkmark--v1.png"/></td>
+                        <td>O seletor de tipo usa o nome do marcador a estilizar</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;CLASSE&gt;</td>
+                        <td><img src="https://img.icons8.com/dusk/30/000000/checkmark--v1.png"/></td>
+                        <td>O seletor de classe associa um nome a um estilo</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;ID&gt;</td>
+                        <td><img src="https://img.icons8.com/dusk/30/000000/checkmark--v1.png"/></td>
+                        <td>O atributo id permite identificar univocamente um elemento
+                            do HTML</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;ATRIBUTO&gt;</td>
+                        <td><img src="https://img.icons8.com/emoji/30/000000/cross-mark-emoji.png"/></td>
+                        <td>Seletores que se aplicam a atributos de elementos</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;PSEUDO-CLASSE&gt;</td>
+                        <td><img src="https://img.icons8.com/dusk/30/000000/checkmark--v1.png"/></td>
+                        <td>Seletor associado ao estado de um elemento</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;PSEUDO-ELEMENTO&gt;</td>
+                        <td><img src="https://img.icons8.com/dusk/30/000000/checkmark--v1.png"/></td>
+                        <td>Seletor associado em partes de um elemento</td>
+                    </tr>
+            </table> 
+                   
+                    <br><br><hr><br><br>
+                    
+                    <table>
+                        <caption>Combinadores CSS</caption>
+                        <thead>
+                            <tr>
+                                <th>Combinadores de Seletores CSS</th>
+                                <th>Usado</th>
+                                <th>Onde</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>&lt;DESCENDENTES&gt;</td>
+                                <td><img src="https://img.icons8.com/emoji/30/000000/cross-mark-emoji.png"/></td>
+                                <td>Todos os tag que estão “dentro” de um tag</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;FILHOS&gt;</td>
+                                <td><img src="https://img.icons8.com/emoji/30/000000/cross-mark-emoji.png"/></td>
+                                <td>Todos os tag que estão “logo dentro" de tag</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;ADJACENTES&gt;</td>
+                                <td><img src="https://img.icons8.com/emoji/30/000000/cross-mark-emoji.png"/></td>
+                                <td>Todos os tag que estão colocados depois de um tag</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;IMEDIATAMENTE ADJACENTES&gt;</td>
+                                <td><img src="https://img.icons8.com/emoji/30/000000/cross-mark-emoji.png"/></td>
+                                <td>Todos os tag que estão colocados “imediatamente” depois de um tag</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;AGRUPADOS&gt;</td>
+                                <td><img src="https://img.icons8.com/emoji/30/000000/cross-mark-emoji.png"/></td>
+                                <td>Mudar todos os tag ao mesmo tempo</td>
+                            </tr>
+                            
+                    </table>
+                </tbody>
+
+                <img  src="images/wordcloudCartel.jpg" alt="">
+
+            </main>
+
+
+        <footer>
+            <div class="footer-content">
+                <img src="images/logoTransparent150v2.png" alt="logoRodape">
+                <p>A deliciosa beleza e elegância dos nossos produtos com uma viagem sensorial e completamente diferente.</p>
+                <ul class="socials">
+                    <li><a href="https://www.instagram.com/carteldiroma/" > <i class="fab fa-instagram"></i>  </a></li>
+                    <li><a href=""> <i class="fab fa-facebook-messenger"></i> </a></li>
+                </ul>
+            </div>
+            
+            <hr>
+            <div class="footer-bottom">
+                <p>copyright &copy; Cartel di Roma 2021 - <span>Made with love</span></p>
+            </div>
+        </footer>
+    
+</body>
+</html>
